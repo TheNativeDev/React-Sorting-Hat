@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Welcome from './components/Welcome';
-import Questions from './components/Questions';
-import Answers from './components/Answers';
+import Sorting from './components/SortingComponents/Sorting';
+
 
 class App extends Component {
   constructor(props) {
@@ -53,13 +53,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='landing-container'>
-          <Welcome />
-        </div>
-        <div className='questions-container'>
-          <Questions />
-          <Answers />
-        </div>
+        <Welcome />
+        <Sorting />
       </div>
     );
   }
